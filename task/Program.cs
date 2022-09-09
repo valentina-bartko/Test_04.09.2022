@@ -9,3 +9,19 @@
 // [“Russia”, “Denmark”, “Kazan”] → []
 
 string[] array = {"465", "dog", "Summer", "870asm"};
+
+string[] arraySecond = new string[array.Length];
+
+void NewArray(string[] array, string[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            arr[count] = array[i];
+            count++;
+        }
+    }
+}
+
